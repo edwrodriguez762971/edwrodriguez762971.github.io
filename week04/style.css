@@ -16,6 +16,17 @@ body {
   margin: 0 auto;
 }
 
+column {
+  float: left;
+  width: 50%;
+}
+
+row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* || typography */
 
 h1, h2, h3 {
@@ -134,4 +145,5 @@ aside img {
 }
 footer {
   margin-top: 10px;
+  text-align: center;
 }
